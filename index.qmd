@@ -1,11 +1,13 @@
 ---
-title: "Saraguef"
+title: "Sara Guefroudj"
+image: media/headshot.jpg
+about:
+  template: solana 
+
+
 ---
 
-This is a Quarto website.
+Hello my name is Sara Guefroudj. I am a student at the University of California Santa Barbara. I am a third year Hydrologic Science and Policy major.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
-```{r}
-1 + 1
 ```
