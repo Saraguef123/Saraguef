@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Saraguef"
+  title: "Sara Guefroudj"
   navbar:
     left:
       - href: index.qmd

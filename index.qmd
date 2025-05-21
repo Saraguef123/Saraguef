@@ -1,8 +1,11 @@
 ---
 title: "Sara Guefroudj"
-image: media/headshot.jpg
+
 about:
-  template: solana 
+  template: jolla 
+  image: media/headshot.jpeg
+  image-shape: round
+  image-width: 12em
 
 
 ---
