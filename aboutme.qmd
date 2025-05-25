@@ -1,0 +1,11 @@
+---
+title: "About Me"
+about:
+  template: jolla 
+---
+
+## Background
+I grew up in Santa Barbara, California. I enjoy spending time by the beach and love the weather here. I am currently pursuing a bachelors degree in Hydrologic Science and Policy and plan to pursue a career focused on substantially and environmental protection.
+
+
+

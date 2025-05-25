@@ -12,5 +12,19 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "aboutme.html",
+    "href": "aboutme.html",
+    "title": "About Me",
+    "section": "",
+    "text": "{layout-ncol=3}"
+  },
+  {
+    "objectID": "aboutme.html#background",
+    "href": "aboutme.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "I grew up in Santa Barbara, California. I enjoy spending time by the beach and love the weather. I am currently pursuing a bachelors degree in Hydrologic Science and Policy and plan to pursue a career focused on substantially and environmental protection."
   }
 ]
