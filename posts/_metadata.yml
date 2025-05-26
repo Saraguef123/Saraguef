@@ -1,0 +1,7 @@
+title-block-style: default
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-tools: true
+    highlight-style: github
