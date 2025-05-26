@@ -1,5 +1,15 @@
 ---
-title: "Courses"
+title: "Favorite Courses"
 format: html
 ---
 
+## Earth Science 2
+One of my favorite courses taken at UCSB is Earth Science 2. It was my first exposure to geology and learned a lot about the different earth processes and plate tectonics. I enjoyed going on a one day field trip to the Santa Ynez mountains and observing the different processes.
+
+::: {layout="[[1,1], [1]]"}
+![](media/Santa_Ynez_1.jpg)
+
+![](media/Santa_Ynez_2.jpg)
+
+![](media/Santa_Ynez3.jpg)
+:::
