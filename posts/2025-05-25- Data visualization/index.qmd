@@ -1,15 +1,49 @@
 ---
 title: " Personal Data Visualization"
-description: "Data visualization on my personal data on time spent on homework"
+description: "Data visualization on the amount of time I spend on schoolwork each day of the week"
 author:
-  - name: Samantha Csik
-    url: https://samanthacsik.github.io/
-    orcid: 0000-0002-5300-3075
-    affiliation: Master of Environmental Data Science Program @ The Bren School (UCSB) & The National Center for Ecological Analysis & Synthesis
-    affiliation-url: https://ucsb-meds.github.io/ 
-date: 10-24-2022
-categories: [Quarto, R, MEDS] # self-defined categories
-citation: 
-  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+  - name: Sara Guefroudj
+    
+categories: [Rstudio] # self-defined categories
 image: preview-image.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+## Data Visualiation
+
+This code displayed visualizes the time I spend on school work each day of the week. I created a  plot where the day of week is on the x-axis and time spent on homework is non the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time each day spent on school work
+
+```{r eval=FALSE}
+mydata$day.of.week <- factor(mydata$day.of.week,
+                             levels = c("Monday", "Tuesday", "Wednesday",
+                                        "Thursday", "Friday", "Saturday",
+                                        "Sunday")) 
+
+mean_data <- mydata |>
+  group_by(day.of.week) |>
+  summarize(mean_time = mean(Time.spent.on.Schoolwork.min.))
+
+ggplot(mydata,
+       aes(x = day.of.week,
+           y = Time.spent.on.Schoolwork.min.,
+           color = day.of.week)) +
+  geom_jitter(width = 0.1,
+              height = 0,
+              alpha = 0.5) +
+  geom_point(data = mean_data, aes(y = mean_time), shape = 16, size = 3, color = "red") +
+  scale_color_manual(values = c(
+    "Monday" = "magenta",
+    "Tuesday" = "orange",
+    "Wednesday" = "gold",
+    "Thursday" = "green",
+    "Friday" = "darkblue",
+    "Saturday" = "black",
+    "Sunday" = "turquoise"
+  )) +
+  labs(
+    title = "Average Time Spent on School Work by Day of Week",
+    x = "Day of the Week",
+    color = "Day of Week",
+    y = "Time Spent on School Work (min)"
+  )
+```
