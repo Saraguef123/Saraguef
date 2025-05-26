@@ -10,7 +10,8 @@ website:
         text: Home
       - href: aboutme.qmd
         text: About me
-      - posts.qmd 
+      - href: posts.qmd
+        text: Projects
       - href: Courses.qmd
         text: Courses
       

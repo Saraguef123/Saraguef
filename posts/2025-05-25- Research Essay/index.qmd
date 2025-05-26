@@ -10,8 +10,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 ---
 
 ## ENVS 40 Project
- For my Environmental science 40 critical thinking course taken at UCSB, I chose to do a research essay on the effects of lithium mining. One of the main goals for this project was to be able to use and demonstrate critical thinking skills. Throughout the 10 week course I was able to learn different kinds of evidence, methods, and arguments to produce a research essay.
- 
- <iframe src="research_essay.pdf" width="100%" height="800px" style="border: none;">
-  <a href="research_essay.pdf">Download PDF</a>.
-</iframe>
+
+For my Environmental science 40 critical thinking course taken at UCSB, I chose to do a research essay on the effects of lithium mining. One of the main goals for this project was to be able to use and demonstrate critical thinking skills. Throughout the 10 week course I was able to learn different kinds of evidence, methods, and arguments to produce a research essay.
+
+<iframe src="research_essay.pdf" width="100%" height="800px" style="border: none;"> <a href="research_essay.pdf">Download PDF</a>. </iframe>
