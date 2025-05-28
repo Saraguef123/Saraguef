@@ -1,11 +1,11 @@
 ---
-title: " Personal Data Visualization"
+title: "Personal Data Visualization"
 description: "Data visualization on the amount of time I spend on schoolwork each day of the week"
 author:
   - name: Sara Guefroudj
     
 categories: [Rstudio] # self-defined categories
-image: preview-image.png
+image: media/datavis.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
