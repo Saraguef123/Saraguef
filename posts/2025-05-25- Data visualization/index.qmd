@@ -5,7 +5,7 @@ author:
   - name: Sara Guefroudj
     
 categories: [Rstudio] # self-defined categories
-image: media/datavis.png
+image: /media/datavis.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
@@ -47,3 +47,4 @@ ggplot(mydata,
     y = "Time Spent on School Work (min)"
   )
 ```
+

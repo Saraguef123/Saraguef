@@ -4,9 +4,11 @@ description: "10 Week project based on Critical Thinking"
 author:
   - name: Sara Guefroudj
     
-categories: [] # self-defined categories
-image: preview-image.png
-draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+categories: [Research Project] # self-defined categories
+image: /media/CT.jpg
+image_source_html: >
+  <a href="http://www.freepik.com">Designed by macrovector_official / Freepik</a>
+draft: false 
 ---
 
 ## ENVS 40 Project

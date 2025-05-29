@@ -1,45 +1,24 @@
 [
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Projects",
+    "objectID": "posts/2025-05-25- Research Essay/index.html",
+    "href": "posts/2025-05-25- Research Essay/index.html",
+    "title": "Critical Thinking Project",
     "section": "",
-    "text": "Personal Data Visualization\n\n\n\nRstudio\n\n\n\nData visualization on the amount of time I spend on schoolwork each day of the week\n\n\n\nSara Guefroudj\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCritical Thinking Project\n\n\n\n\n\n10 Week project based on Critical Thinking\n\n\n\nSara Guefroudj\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "For my Environmental science 40 critical thinking course taken at UCSB, I chose to do a research essay on the effects of lithium mining. One of the main goals for this project was to be able to use and demonstrate critical thinking skills. Throughout the 10 week course I was able to learn different kinds of evidence, methods, and arguments to produce a research essay.\n\n&lt;p&gt;&lt;a href=\"research_essay.pdf\"&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;"
   },
   {
-    "objectID": "posts/2025-05-25- Data visualization/index.html",
-    "href": "posts/2025-05-25- Data visualization/index.html",
-    "title": "Personal Data Visualization",
+    "objectID": "posts/2025-05-25- Research Essay/index.html#envs-40-project",
+    "href": "posts/2025-05-25- Research Essay/index.html#envs-40-project",
+    "title": "Critical Thinking Project",
     "section": "",
-    "text": "This code displayed visualizes the time I spend on school work each day of the week. I created a plot where the day of week is on the x-axis and time spent on homework is non the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time each day spent on school work\n\n\nCode\nmydata$day.of.week &lt;- factor(mydata$day.of.week,\n                             levels = c(\"Monday\", \"Tuesday\", \"Wednesday\",\n                                        \"Thursday\", \"Friday\", \"Saturday\",\n                                        \"Sunday\")) \n\nmean_data &lt;- mydata |&gt;\n  group_by(day.of.week) |&gt;\n  summarize(mean_time = mean(Time.spent.on.Schoolwork.min.))\n\nggplot(mydata,\n       aes(x = day.of.week,\n           y = Time.spent.on.Schoolwork.min.,\n           color = day.of.week)) +\n  geom_jitter(width = 0.1,\n              height = 0,\n              alpha = 0.5) +\n  geom_point(data = mean_data, aes(y = mean_time), shape = 16, size = 3, color = \"red\") +\n  scale_color_manual(values = c(\n    \"Monday\" = \"magenta\",\n    \"Tuesday\" = \"orange\",\n    \"Wednesday\" = \"gold\",\n    \"Thursday\" = \"green\",\n    \"Friday\" = \"darkblue\",\n    \"Saturday\" = \"black\",\n    \"Sunday\" = \"turquoise\"\n  )) +\n  labs(\n    title = \"Average Time Spent on School Work by Day of Week\",\n    x = \"Day of the Week\",\n    color = \"Day of Week\",\n    y = \"Time Spent on School Work (min)\"\n  )"
+    "text": "For my Environmental science 40 critical thinking course taken at UCSB, I chose to do a research essay on the effects of lithium mining. One of the main goals for this project was to be able to use and demonstrate critical thinking skills. Throughout the 10 week course I was able to learn different kinds of evidence, methods, and arguments to produce a research essay.\n\n&lt;p&gt;&lt;a href=\"research_essay.pdf\"&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;"
   },
   {
-    "objectID": "posts/2025-05-25- Data visualization/index.html#data-visualiation",
-    "href": "posts/2025-05-25- Data visualization/index.html#data-visualiation",
-    "title": "Personal Data Visualization",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sara Guefroudj",
     "section": "",
-    "text": "This code displayed visualizes the time I spend on school work each day of the week. I created a plot where the day of week is on the x-axis and time spent on homework is non the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time each day spent on school work\n\n\nCode\nmydata$day.of.week &lt;- factor(mydata$day.of.week,\n                             levels = c(\"Monday\", \"Tuesday\", \"Wednesday\",\n                                        \"Thursday\", \"Friday\", \"Saturday\",\n                                        \"Sunday\")) \n\nmean_data &lt;- mydata |&gt;\n  group_by(day.of.week) |&gt;\n  summarize(mean_time = mean(Time.spent.on.Schoolwork.min.))\n\nggplot(mydata,\n       aes(x = day.of.week,\n           y = Time.spent.on.Schoolwork.min.,\n           color = day.of.week)) +\n  geom_jitter(width = 0.1,\n              height = 0,\n              alpha = 0.5) +\n  geom_point(data = mean_data, aes(y = mean_time), shape = 16, size = 3, color = \"red\") +\n  scale_color_manual(values = c(\n    \"Monday\" = \"magenta\",\n    \"Tuesday\" = \"orange\",\n    \"Wednesday\" = \"gold\",\n    \"Thursday\" = \"green\",\n    \"Friday\" = \"darkblue\",\n    \"Saturday\" = \"black\",\n    \"Sunday\" = \"turquoise\"\n  )) +\n  labs(\n    title = \"Average Time Spent on School Work by Day of Week\",\n    x = \"Day of the Week\",\n    color = \"Day of Week\",\n    y = \"Time Spent on School Work (min)\"\n  )"
-  },
-  {
-    "objectID": "Courses.html",
-    "href": "Courses.html",
-    "title": "Favorite Courses",
-    "section": "",
-    "text": "One of my favorite courses taken at UCSB is Earth Science 2. It was my first exposure to geology and learned a lot about the different earth processes and plate tectonics. I enjoyed going on a one day field trip to the Santa Ynez mountains and observing the different processes."
-  },
-  {
-    "objectID": "Courses.html#earth-science-2",
-    "href": "Courses.html#earth-science-2",
-    "title": "Favorite Courses",
-    "section": "",
-    "text": "One of my favorite courses taken at UCSB is Earth Science 2. It was my first exposure to geology and learned a lot about the different earth processes and plate tectonics. I enjoyed going on a one day field trip to the Santa Ynez mountains and observing the different processes."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Hello my name is Sara Guefroudj. I am a student at the University of California Santa Barbara. I am a third year Hydrologic Science and Policy major.\n```"
   },
   {
     "objectID": "aboutme.html",
@@ -70,24 +49,45 @@
     "text": "Baking\nI have recently been enjoying baking different kinds of desserts and pastries from all around the world. I enjoy learning the different recipes and cultures behind them. One of my favorites was baking baklava at home which took a lot of time but was very worth it in the end."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Sara Guefroudj",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Hello my name is Sara Guefroudj. I am a student at the University of California Santa Barbara. I am a third year Hydrologic Science and Policy major.\n```"
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "posts/2025-05-25- Research Essay/index.html",
-    "href": "posts/2025-05-25- Research Essay/index.html",
-    "title": "Critical Thinking Project",
+    "objectID": "Courses.html",
+    "href": "Courses.html",
+    "title": "Favorite Courses",
     "section": "",
-    "text": "For my Environmental science 40 critical thinking course taken at UCSB, I chose to do a research essay on the effects of lithium mining. One of the main goals for this project was to be able to use and demonstrate critical thinking skills. Throughout the 10 week course I was able to learn different kinds of evidence, methods, and arguments to produce a research essay.\n\n&lt;p&gt;&lt;a href=\"research_essay.pdf\"&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;"
+    "text": "One of my favorite courses taken at UCSB is Earth Science 2. It was my first exposure to geology and I learned a lot about earths different processes and plate tectonics. I enjoyed going on a one day field trip to the Santa Ynez mountains and observing the different geologic processes."
   },
   {
-    "objectID": "posts/2025-05-25- Research Essay/index.html#envs-40-project",
-    "href": "posts/2025-05-25- Research Essay/index.html#envs-40-project",
-    "title": "Critical Thinking Project",
+    "objectID": "Courses.html#earth-science-2",
+    "href": "Courses.html#earth-science-2",
+    "title": "Favorite Courses",
     "section": "",
-    "text": "For my Environmental science 40 critical thinking course taken at UCSB, I chose to do a research essay on the effects of lithium mining. One of the main goals for this project was to be able to use and demonstrate critical thinking skills. Throughout the 10 week course I was able to learn different kinds of evidence, methods, and arguments to produce a research essay.\n\n&lt;p&gt;&lt;a href=\"research_essay.pdf\"&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;"
+    "text": "One of my favorite courses taken at UCSB is Earth Science 2. It was my first exposure to geology and I learned a lot about earths different processes and plate tectonics. I enjoyed going on a one day field trip to the Santa Ynez mountains and observing the different geologic processes."
+  },
+  {
+    "objectID": "posts/2025-05-25- Data visualization/index.html",
+    "href": "posts/2025-05-25- Data visualization/index.html",
+    "title": "Personal Data Visualization",
+    "section": "",
+    "text": "This code displayed visualizes the time I spend on school work each day of the week. I created a plot where the day of week is on the x-axis and time spent on homework is non the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time each day spent on school work\n\n\nCode\nmydata$day.of.week &lt;- factor(mydata$day.of.week,\n                             levels = c(\"Monday\", \"Tuesday\", \"Wednesday\",\n                                        \"Thursday\", \"Friday\", \"Saturday\",\n                                        \"Sunday\")) \n\nmean_data &lt;- mydata |&gt;\n  group_by(day.of.week) |&gt;\n  summarize(mean_time = mean(Time.spent.on.Schoolwork.min.))\n\nggplot(mydata,\n       aes(x = day.of.week,\n           y = Time.spent.on.Schoolwork.min.,\n           color = day.of.week)) +\n  geom_jitter(width = 0.1,\n              height = 0,\n              alpha = 0.5) +\n  geom_point(data = mean_data, aes(y = mean_time), shape = 16, size = 3, color = \"red\") +\n  scale_color_manual(values = c(\n    \"Monday\" = \"magenta\",\n    \"Tuesday\" = \"orange\",\n    \"Wednesday\" = \"gold\",\n    \"Thursday\" = \"green\",\n    \"Friday\" = \"darkblue\",\n    \"Saturday\" = \"black\",\n    \"Sunday\" = \"turquoise\"\n  )) +\n  labs(\n    title = \"Average Time Spent on School Work by Day of Week\",\n    x = \"Day of the Week\",\n    color = \"Day of Week\",\n    y = \"Time Spent on School Work (min)\"\n  )"
+  },
+  {
+    "objectID": "posts/2025-05-25- Data visualization/index.html#data-visualiation",
+    "href": "posts/2025-05-25- Data visualization/index.html#data-visualiation",
+    "title": "Personal Data Visualization",
+    "section": "",
+    "text": "This code displayed visualizes the time I spend on school work each day of the week. I created a plot where the day of week is on the x-axis and time spent on homework is non the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time each day spent on school work\n\n\nCode\nmydata$day.of.week &lt;- factor(mydata$day.of.week,\n                             levels = c(\"Monday\", \"Tuesday\", \"Wednesday\",\n                                        \"Thursday\", \"Friday\", \"Saturday\",\n                                        \"Sunday\")) \n\nmean_data &lt;- mydata |&gt;\n  group_by(day.of.week) |&gt;\n  summarize(mean_time = mean(Time.spent.on.Schoolwork.min.))\n\nggplot(mydata,\n       aes(x = day.of.week,\n           y = Time.spent.on.Schoolwork.min.,\n           color = day.of.week)) +\n  geom_jitter(width = 0.1,\n              height = 0,\n              alpha = 0.5) +\n  geom_point(data = mean_data, aes(y = mean_time), shape = 16, size = 3, color = \"red\") +\n  scale_color_manual(values = c(\n    \"Monday\" = \"magenta\",\n    \"Tuesday\" = \"orange\",\n    \"Wednesday\" = \"gold\",\n    \"Thursday\" = \"green\",\n    \"Friday\" = \"darkblue\",\n    \"Saturday\" = \"black\",\n    \"Sunday\" = \"turquoise\"\n  )) +\n  labs(\n    title = \"Average Time Spent on School Work by Day of Week\",\n    x = \"Day of the Week\",\n    color = \"Day of Week\",\n    y = \"Time Spent on School Work (min)\"\n  )"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Critical Thinking Project\n\n\n10 Week project based on Critical Thinking\n\n\n\nSara Guefroudj\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPersonal Data Visualization\n\n\nData visualization on the amount of time I spend on schoolwork each day of the week\n\n\n\nSara Guefroudj\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

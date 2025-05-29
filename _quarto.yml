@@ -14,14 +14,17 @@ website:
         text: Projects
       - href: Courses.qmd
         text: Courses
+      - href: Resume.qmd
+        text: Resume
       
       
 
 format:
   html:
-    theme: Pulse
-    css: styles.css
+    theme: styles.scss
+    #css: styles.css
     toc: true
+
 
 editor: visual
 
