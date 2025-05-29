@@ -2,6 +2,7 @@
 title: "About Me"
 about:
   template: jolla 
+
 ---
 ![Santa Barbara](media/SantaBarbara.jpg){fig-align="center"}
 
@@ -12,10 +13,9 @@ I grew up in Santa Barbara, California. I enjoy spending time by the beach and l
 
 ## Photography
 I enjoy photography in my free time. I enjoy taking pictures of places I have been or anything that I can capture in the moment. Here are some photos I have taken over the years.
-<div style="display: flex; gap: 10px;">
-  <img src="media/Bee.jpg" alt="Homemade baklava 1" style="width: 48%;">
-  <img src="media/Bird.jpg" alt="Homemade tarts 1" style="width: 48%;">
-</div>
+![A Lovely Image](media/bee.jpg){.lightbox}
+
+![Another Lovely Image](media/bird.jpg)
 
 
 
