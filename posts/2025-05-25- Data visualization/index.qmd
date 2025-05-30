@@ -53,5 +53,7 @@ ggplot(mydata, #uses mydata frame
 
 ### Plot
 
-![]media/Photo.jpg)
+![](/media/datavis1.jpg)
+
+Figure 1: Average time spent on school work(min) measured each day of the week Sunday-Friday. The response variable is time spent on school(min) and the predictor variable is the day of week. Small circles represent the individual observations for time spent on school work each day. The red point represents the mean time spent on school work for each week day.
 
