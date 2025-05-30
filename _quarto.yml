@@ -14,8 +14,9 @@ website:
         text: Projects
       - href: Courses.qmd
         text: Courses
-      - href: Resume.qmd
-        text: Resume
+      - href: "/SaraResu.pdf"
+        text: "Resume"
+        target: "_blank"
       
       
 
