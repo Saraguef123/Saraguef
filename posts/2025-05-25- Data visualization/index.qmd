@@ -53,5 +53,5 @@ ggplot(mydata, #uses mydata frame
 
 ### Plot
 
-![ ](../media/datavis1.jpg)
+![]media/Photo.jpg)
 
