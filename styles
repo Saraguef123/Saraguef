@@ -1,17 +1,30 @@
-/* scss:defaults*/
-  Colors
-$dark-green: #858E79;
-$light-green: #D1D9CE;
-$cream: #FDFBF7;
-$gray: #64605f;
-$purple: #9158A2;
-$orange: #ad7237;
+/* styles.css */
 
-// Base document colors
-$navbar-bg: $cream; // navbar
-$navbar-fg: $dark-green; // navbar foreground elements
-$navbar-hl: $purple; // highlight color when hovering over navbar links
-$body-bg: $light-green; // page background 
-$body-color: $gray; // page text 
-$footer-bg: $cream; // footer 
-$link-color: $purple; // hyperlinks
+/* Target the gallery container */
+.quarto-gallery {
+  display: flex;       /* Use Flexbox for horizontal layout */
+  flex-wrap: wrap;     /* Allow images to wrap to the next line if space runs out */
+  justify-content: center; /* Center the images horizontally within the container */
+  align-items: flex-start; /* Align images to the top if they have different heights */
+  gap: 15px;           /* Add space between images (adjust as needed) */
+  margin-top: 20px;    /* Add some space above the gallery */
+  margin-bottom: 20px; /* Add some space below the gallery */
+}
+
+/* Target individual images within the gallery */
+.quarto-gallery img {
+  max-width: 30%;      /* Adjust this percentage to control image size. */
+                        /* e.g., 30% for 3 images per row with gaps, 48% for 2, etc. */
+  height: auto;        /* Maintain aspect ratio */
+  object-fit: cover;   /* Ensures images cover their area without distortion, can be removed if not desired */
+  border-radius: 8px;  /* Optional: gives images slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Styles for the optional captions/descriptions if they are generated */
+.quarto-gallery figcaption {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #555;
+}

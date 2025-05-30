@@ -24,6 +24,7 @@ format:
     theme: styles.scss
     #css: styles.css
     toc: true
+    lightbox: true
 
 
 editor: visual

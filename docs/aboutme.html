@@ -38,6 +38,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,6 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -137,9 +141,14 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </header><main class="content" id="quarto-document-content">
 
+<hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="media/SantaBarbara.jpg" class="img-fluid figure-img"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="media/SantaBarbara.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Santa Barbara"><img src="media/SantaBarbara.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Santa Barbara"></a></p>
+</figure>
+</div>
 <figcaption>Santa Barbara</figcaption>
 </figure>
 </div>
@@ -149,16 +158,16 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="photography" class="level2">
 <h2 data-anchor-id="photography">Photography</h2>
-I enjoy photography in my free time. I enjoy taking pictures of places I have been or anything that I can capture in the moment. Here are some photos I have taken over the years.
+<p>I enjoy photography in my free time. I enjoy taking pictures of places I have been or anything that I can capture in the moment. Here are some photos I have taken over the years.</p>
 <div style="display: flex; gap: 10px;">
-<p><a href="media/Bee.jpg"> <img src="media/Bee.jpg" alt="Close-up of a bee" style="width: 48%; border-radius: 4px;"> </a> <a href="media/Bird.jpg"> <img src="media/Bird.jpg" alt="Bird perched on a branch" style="width: 48%; border-radius: 4px;"> </a></p>
+<p><img src="media/bee.jpg" alt="Bee" style="width: 30%;"> <img src="media/bird.jpg" alt="Bird" style="width: 30%;"> <img src="media/Photo.jpg" alt="Photo" style="width: 30%;"></p>
 </div>
 </section>
 <section id="baking" class="level2">
 <h2 data-anchor-id="baking">Baking</h2>
 I have recently been enjoying baking different kinds of desserts and pastries from all around the world. I enjoy learning the different recipes and cultures behind them. One of my favorites was baking baklava at home which took a lot of time but was very worth it in the end.
 <div style="display: flex; gap: 10px;">
-<p><img src="media/Baklava.jpg" alt="Homemade baklava 1" style="width: 48%;"> <img src="media/Tart.jpg" alt="Homemade tarts 1" style="width: 48%;"></p>
+<p><img src="media/Baklava.jpg" alt="Homemade baklava 1" style="width: 35%;"> <img src="media/Tart.jpg" alt="Homemade tarts 1" style="width: 35%;"></p>
 
 
 </div>
@@ -580,6 +589,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

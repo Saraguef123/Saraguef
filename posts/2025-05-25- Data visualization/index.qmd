@@ -14,37 +14,44 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 This code displayed visualizes the time I spend on school work each day of the week. I created a  plot where the day of week is on the x-axis and time spent on homework is non the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time each day spent on school work
 
 ```{r eval=FALSE}
-mydata$day.of.week <- factor(mydata$day.of.week,
+mydata$day.of.week <-  factor(mydata$day.of.week, #converts day of week to a factor with specific order
                              levels = c("Monday", "Tuesday", "Wednesday",
                                         "Thursday", "Friday", "Saturday",
                                         "Sunday")) 
 
-mean_data <- mydata |>
-  group_by(day.of.week) |>
-  summarize(mean_time = mean(Time.spent.on.Schoolwork.min.))
 
-ggplot(mydata,
-       aes(x = day.of.week,
-           y = Time.spent.on.Schoolwork.min.,
-           color = day.of.week)) +
-  geom_jitter(width = 0.1,
-              height = 0,
-              alpha = 0.5) +
-  geom_point(data = mean_data, aes(y = mean_time), shape = 16, size = 3, color = "red") +
+mean_data <- mydata |> #uses my_data frame
+group_by(day.of.week) |> #groups points by day of week
+  summarize(mean_time = mean(Time.spent.on.Schoolwork.min.)) #calculates mean time spent on school work for each day of the week
+  
+ggplot(mydata, #uses mydata frame
+       aes(x = day.of.week, #x-axis should be day of week
+           y = Time.spent.on.Schoolwork.min., #y-axis should be time spent on school work in min
+                   color = day.of.week)) + #coloring geometries by day of week
+  
+  geom_jitter( width =0.1, #adds points
+               height= 0,
+               alpha=0.5)+ # points 50% transparent
+  geom_point(data=mean_data, aes(y=mean_time), shape = 16, size = 3, color = "red")+#adds a mean point for each day
   scale_color_manual(values = c(
-    "Monday" = "magenta",
-    "Tuesday" = "orange",
-    "Wednesday" = "gold",
-    "Thursday" = "green",
-    "Friday" = "darkblue",
-    "Saturday" = "black",
-    "Sunday" = "turquoise"
-  )) +
+    "Monday" = "magenta", #changes color of points
+    "Tuesday" = "orange", #changes color of points 
+    "Wednesday" = "gold", #changes color of points
+    "Thursday" = "green", #changes color of points
+    "Friday" = "darkblue",#changes color of points
+    "Saturday"= "black",  #changes color of points
+    "Sunday" = "turquoise"  #changes color of points
+  ))+
   labs(
-    title = "Average Time Spent on School Work by Day of Week",
-    x = "Day of the Week",
-    color = "Day of Week",
-    y = "Time Spent on School Work (min)"
-  )
+    title = " Average Time Spent on School Work by Day of Week", #adds a title
+    x = "Day of the Week", #changes x-axis title
+    color = "Day of Week", #changes legend title
+    y = "Time spent on School Work(min)", #changes y-axis title
+    caption = "Figure 1") +#adds a caption 
+  theme_bw() #changing theme of plot
 ```
+
+### Plot
+
+![ ](../media/datavis1.jpg)
 
