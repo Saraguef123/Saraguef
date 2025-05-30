@@ -13,9 +13,10 @@ I grew up in Santa Barbara, California. I enjoy spending time by the beach and l
 
 ## Photography
 I enjoy photography in my free time. I enjoy taking pictures of places I have been or anything that I can capture in the moment. Here are some photos I have taken over the years.
-![A Lovely Image](media/bee.jpg){group="my-gallery"}
+![](media/bee.jpg){group="my-gallery"}
 
-![Another Lovely Image](media/bird.jpg){group="my-gallery"}
+![](media/bird.jpg){group="my-gallery"}
+![](media/Other.png){group="my-gallery"}
 
 
 
