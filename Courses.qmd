@@ -7,10 +7,18 @@ format: html
 
 One of my favorite courses taken at UCSB is Earth Science 2. It was my first exposure to geology and I learned a lot about earths different processes and plate tectonics. I enjoyed going on a one day field trip to the Santa Ynez mountains and observing the different geologic processes.
 
-::: {layout="[[1,1,1]]"}
-![](media/Santa_Ynez_1.jpg){style="width:100px; height:50px;"}
-![](media/Santa_Ynez_2.jpg){style="width:100px; height:50px;"}
-![](media/Santa_Ynez3.jpg){style="width:100px; height:50px;"}
+:::{.column-screen}
+::: {.grid}
+::: {.g-col-4}
+![](media/Santa_Ynez_1.jpeg){width=50% height=50%}
+:::
+::: {.g-col-4}
+![](media/Santa_Ynez_2.jpeg){width=50% height=50%}
+:::
+::: {.g-col-4}
+![](media/Santa_Ynez_3.jpeg){width=50% height=50%}
+:::
+:::
 :::
 
 ## 
