@@ -1,5 +1,5 @@
 ---
-title: "Favorite Courses"
+title: "Courses Taken"
 format: html
 ---
 
@@ -12,4 +12,12 @@ One of my favorite courses taken at UCSB is Earth Science 2. It was my first exp
 ![](media/Santa_Ynez_2.jpg){style="width:300px; height:300px;"}
 :::
 
-## 
+##  Enviormental Science 144
+This course taken at UCSB was about rivers and understanding the different river process and human use of rivers. One important part of the class was a one day field trip to observe the mission creek water shed in Santa Barbara starting from its headwaters and down to the rivers outlet. Our main objective for this field trip was to observe the hydrygeomorphology at each site and observe the human impacts on the river. We stopped at 6 sites starting up from the mountains down to the pacific ocean.
+
+### Map
+This map shows the sites we observed along the Mission Creek Watershed. In orange it shows the delineated watershed. The blue markers represent the individual sites we observed. When you click on the blue markers it will give you a brief description of what we observed as we move to each site.
+```html
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=100mdI47ok1B-40-6V60RdEW-OJ1WLng&ehbc=2E312F" width="640" height="480"></iframe>
+
+

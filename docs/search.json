@@ -23,14 +23,14 @@
   {
     "objectID": "Courses.html",
     "href": "Courses.html",
-    "title": "Favorite Courses",
+    "title": "Courses Taken",
     "section": "",
     "text": "One of my favorite courses taken at UCSB is Earth Science 2. It was my first exposure to geology and I learned a lot about earths different processes and plate tectonics. I enjoyed going on a one day field trip to the Santa Ynez mountains and observing the different geologic processes."
   },
   {
     "objectID": "Courses.html#earth-science-2",
     "href": "Courses.html#earth-science-2",
-    "title": "Favorite Courses",
+    "title": "Courses Taken",
     "section": "",
     "text": "One of my favorite courses taken at UCSB is Earth Science 2. It was my first exposure to geology and I learned a lot about earths different processes and plate tectonics. I enjoyed going on a one day field trip to the Santa Ynez mountains and observing the different geologic processes."
   },
@@ -82,5 +82,19 @@
     "title": "Critical Thinking Project",
     "section": "",
     "text": "For my Environmental Science 40 critical thinking course taken at UCSB, I chose to do a research essay on the effects of lithium mining. One of the main goals for this project was to be able to use and demonstrate critical thinking skills. Throughout the 10 week course I was able to learn different kinds of evidence, methods, and arguments to produce a research essay.\n\n&lt;p&gt;&lt;a href=\"research_essay.pdf\"&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;\n\nThe process for this project started with making a proposal on what my project is going to look like and how I plan on presenting it. This took me a week to complete. The second part of this process was to start doing research. I spent 2 weeks gathering and synthesizing information on the topic in order to move forward with essay. Th last step of this process was to start writing the essay, and make sure to utilize the critical thinking skills I learned through out the quarter."
+  },
+  {
+    "objectID": "Courses.html#enviormental-science-144",
+    "href": "Courses.html#enviormental-science-144",
+    "title": "Courses Taken",
+    "section": "Enviormental Science 144",
+    "text": "Enviormental Science 144\nThis course taken at UCSB was about rivers and understanding the different river process and human use of rivers. One important part of the class was a one day field trip to observe the mission creek water shed in Santa Barbara starting from its headwaters and down to the rivers outlet. Our main objective for this field trip was to observe the hydrygeomorphology at each site and observe the human impacts on the river. We stopped at 6 sites starting up from the mountains down to the pacific ocean."
+  },
+  {
+    "objectID": "Courses.html#interactive-map-of-earth-processes",
+    "href": "Courses.html#interactive-map-of-earth-processes",
+    "title": "Courses Taken",
+    "section": "Interactive Map of Earth Processes",
+    "text": "Interactive Map of Earth Processes\n```html"
   }
 ]
