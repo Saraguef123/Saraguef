@@ -158,9 +158,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="photography" class="level2">
 <h2 data-anchor-id="photography">Photography</h2>
-<p>I enjoy photography in my free time. I enjoy taking pictures of places I have been or anything that I can capture in the moment. Here are some photos I have taken over the years.</p>
+I enjoy photography in my free time. I enjoy taking pictures of places I have been or anything that I can capture in the moment. Here are some photos I have taken over the years.
 <div style="display: flex; gap: 10px;">
-<p><img src="media/bee.jpg" alt="Bee" style="width: 30%;"> <img src="media/bird.jpg" alt="Bird" style="width: 30%;"> <img src="media/Photo.jpg" alt="Photo" style="width: 30%;"></p>
+<p><img src="media/bee.jpg" alt="Bee" style="height: 250px; width: auto; object-fit: cover;"> <img src="media/bird.jpg" alt="Bird" style="height: 250px; width: auto; object-fit: cover;"> <img src="media/Photo.jpg" alt="Photo" style="height: 250px; width: auto; object-fit: cover;"></p>
 </div>
 </section>
 <section id="baking" class="level2">
@@ -589,7 +589,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
