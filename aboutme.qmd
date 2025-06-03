@@ -30,20 +30,18 @@ I grew up in Santa Barbara, California. I enjoy spending time by the beach and l
 
 ## Photography
 I enjoy photography in my free time. I enjoy taking pictures of places I have been or anything that I can capture in the moment. Here are some photos I have taken over the years.
-
-
-
 <div style="display: flex; gap: 10px;">
-  <img src="media/bee.jpg" alt="Bee" style="width: 30%;">
-  <img src="media/bird.jpg" alt="Bird" style="width: 30%;">
-  <img src="media/Photo.jpg" alt="Photo" style="width: 30%;">
+  <img src="media/bee.jpg" alt="Bee" style="height: 250px; width: auto; object-fit: cover;">
+  <img src="media/bird.jpg" alt="Bird" style="height: 250px; width: auto; object-fit: cover;">
+  <img src="media/Photo.jpg" alt="Photo" style="height: 250px; width: auto; object-fit: cover;">
 </div>
 
 ## Baking
 I have recently been enjoying baking different kinds of desserts and pastries from all around the world. I enjoy learning the different recipes and cultures behind them. One of my favorites was baking baklava at home which took a lot of time but was very worth it in the end.
 <div style="display: flex; gap: 10px;">
-  <img src="media/Baklava.jpg" alt="Homemade baklava 1" style="width: 35%;">
-  <img src="media/Tart.jpg" alt="Homemade tarts 1" style="width: 35%;">
+  <img src="media/Baklava.jpg" alt="Homemade baklava 1" style="height: 300px; width: auto; object-fit: cover;">
+  <img src="media/Tart.jpg" alt="Homemade tarts 1" style="height: 300px; width: auto; object-fit: cover;">
+</div>
 
 
 
