@@ -1,13 +1,17 @@
 ---
-title: "Sara Guefroudj"
+title: "Sara Guefroudj😊"
 
 about:
   template: jolla 
   image: media/headshot.jpeg
   image-shape: round
   image-width: 12em
+  
+format:
+  html:
+   css: styles.css
 ---
 
 Hello my name is Sara Guefroudj. I am a student at the University of California Santa Barbara. I am a third year Hydrologic Science and Policy major.
 
-\`\`\`
+

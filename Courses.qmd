@@ -1,9 +1,13 @@
 ---
 title: "Courses Taken"
-format: html
+format:
+  html:
+    css: styles.css
 ---
 
 ## Earth Science 2
+
+<hr style="height: 3px; background-color: black; border: none;">
 
 One of my favorite courses taken at UCSB is Earth Science 2. It was my first exposure to geology and I learned a lot about earths different processes and plate tectonics. I enjoyed going on a one day field trip to the Santa Ynez mountains and observing the different geologic processes.
 
@@ -13,6 +17,9 @@ One of my favorite courses taken at UCSB is Earth Science 2. It was my first exp
 :::
 
 ##  Enviormental Science 144
+
+<hr style="height: 3px; background-color: black; border: none;">
+
 This course taken at UCSB was about rivers and understanding the different river process and human use of rivers. One important part of the class was a one day field trip to observe the Mission Creek watershed located in Santa Barbara, California. We observed the watershed starting from its headwaters and down to the rivers outlet. Our main objective for this field trip was to observe the hydrygeomorphology at each site and observe the human impacts on the river. We stopped at 6 sites starting up from the mountains down to the pacific ocean.
 
 ### Map of Mission Creek Watershed
