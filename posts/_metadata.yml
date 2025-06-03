@@ -5,3 +5,4 @@ format:
     code-fold: show
     code-tools: true
     highlight-style: github
+    css: ../styles.css
