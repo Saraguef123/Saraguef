@@ -9,7 +9,7 @@ One of my favorite courses taken at UCSB is Earth Science 2. It was my first exp
 
 ::: {layout="[[2]]" gap="10px" layout-align="center"}
 ![](media/Santa_Ynez_1.jpg){style="width:300px; height:300px;"}
-![](media/Santa_Ynez_3.jpg){ssstyle="width:300px; height:300px;"}
+![](media/Santa_Ynez3.jpg){style="width:300px; height:300px;"}
 :::
 
 ##  Enviormental Science 144
