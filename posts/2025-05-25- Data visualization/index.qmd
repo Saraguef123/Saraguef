@@ -11,7 +11,8 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 ## Data Visualiation
 
-This code displayed visualizes the time I spend on school work each day of the week. I created a  plot where the day of week is on the x-axis and time spent on homework is non the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time each day spent on school work
+I collected data each week on the amount of time I spend on schoolwork. Starting from 4/18/2025 to 5/18/2025 I timed how much time I spend on homework each day using a stopwatch on my phone. I then transferred the data to excel and used that data to visualize it using r studio. This code displayed visualizes the time I spend on school work each day of the week. I created a  plot where the day of week is on the x-axis and time spent on homework is on the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time spent on school work  for each week day.
+
 
 ```{r eval=FALSE}
 mydata$day.of.week <-  factor(mydata$day.of.week, #converts day of week to a factor with specific order
@@ -55,5 +56,5 @@ ggplot(mydata, #uses mydata frame
 
 ![](/media/datavis1.jpg)
 
-Figure 1: Average time spent on school work(min) measured each day of the week Sunday-Friday. The response variable is time spent on school(min) and the predictor variable is the day of week. Small circles represent the individual observations for time spent on school work each day. The red point represents the mean time spent on school work for each week day.
+Figure 1: Average time spent on school work(min) measured each day of the week Sunday-Friday. The response variable is time spent on school(min) and the predictor variable is the day of week. Small circles represent the individual observations for time spent on school work each day. The red point represents the mean time spent on schoolwork for each week day.
 

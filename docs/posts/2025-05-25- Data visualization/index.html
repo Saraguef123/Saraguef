@@ -208,7 +208,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="data-visualiation" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualiation">Data Visualiation</h2>
-<p>This code displayed visualizes the time I spend on school work each day of the week. I created a plot where the day of week is on the x-axis and time spent on homework is non the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time each day spent on school work</p>
+<p>I collected data each week on the amount of time I spend on schoolwork. Starting from 4/18/2025 to 5/18/2025 I timed how much time I spend on homework each day using a stopwatch on my phone. I then transferred the data to excel and used that data to visualize it using r studio. This code displayed visualizes the time I spend on school work each day of the week. I created a plot where the day of week is on the x-axis and time spent on homework is on the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time spent on school work for each week day.</p>
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
@@ -252,7 +252,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="plot" class="level3">
 <h3 class="anchored" data-anchor-id="plot">Plot</h3>
 <p><a href="../..\media/datavis1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../..\media/datavis1.jpg" class="img-fluid"></a></p>
-<p>Figure 1: Average time spent on school work(min) measured each day of the week Sunday-Friday. The response variable is time spent on school(min) and the predictor variable is the day of week. Small circles represent the individual observations for time spent on school work each day. The red point represents the mean time spent on school work for each week day.</p>
+<p>Figure 1: Average time spent on school work(min) measured each day of the week Sunday-Friday. The response variable is time spent on school(min) and the predictor variable is the day of week. Small circles represent the individual observations for time spent on school work each day. The red point represents the mean time spent on schoolwork for each week day.</p>
 
 
 <!-- -->
@@ -745,54 +745,55 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Visualiation</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>This code displayed visualizes the time I spend on school work each day of the week. I created a  plot where the day of week is on the x-axis and time spent on homework is non the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time each day spent on school work</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>I collected data each week on the amount of time I spend on schoolwork. Starting from 4/18/2025 to 5/18/2025 I timed how much time I spend on homework each day using a stopwatch on my phone. I then transferred the data to excel and used that data to visualize it using r studio. This code displayed visualizes the time I spend on school work each day of the week. I created a  plot where the day of week is on the x-axis and time spent on homework is on the y-axis. The jittered points represent individually time spent each day. The red points represent the mean time spent on school work  for each week day.</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="in">```{r eval=FALSE}</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="in">mydata$day.of.week &lt;-  factor(mydata$day.of.week, #converts day of week to a factor with specific order</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="in">                             levels = c("Monday", "Tuesday", "Wednesday",</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="in">                                        "Thursday", "Friday", "Saturday",</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="in">                                        "Sunday")) </span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="in">```{r eval=FALSE}</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="in">mydata$day.of.week &lt;-  factor(mydata$day.of.week, #converts day of week to a factor with specific order</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="in">                             levels = c("Monday", "Tuesday", "Wednesday",</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="in">                                        "Thursday", "Friday", "Saturday",</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="in">                                        "Sunday")) </span></span>
 <span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="in">mean_data &lt;- mydata |&gt; #uses my_data frame</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="in">group_by(day.of.week) |&gt; #groups points by day of week</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="in">  summarize(mean_time = mean(Time.spent.on.Schoolwork.min.)) #calculates mean time spent on school work for each day of the week</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="in">  </span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="in">ggplot(mydata, #uses mydata frame</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="in">       aes(x = day.of.week, #x-axis should be day of week</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="in">           y = Time.spent.on.Schoolwork.min., #y-axis should be time spent on school work in min</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="in">                   color = day.of.week)) + #coloring geometries by day of week</span></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="in">  </span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_jitter( width =0.1, #adds points</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="in">               height= 0,</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="in">               alpha=0.5)+ # points 50% transparent</span></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_point(data=mean_data, aes(y=mean_time), shape = 16, size = 3, color = "red")+#adds a mean point for each day</span></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="in">  scale_color_manual(values = c(</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="in">    "Monday" = "magenta", #changes color of points</span></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="in">    "Tuesday" = "orange", #changes color of points </span></span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="in">    "Wednesday" = "gold", #changes color of points</span></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="in">    "Thursday" = "green", #changes color of points</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="in">    "Friday" = "darkblue",#changes color of points</span></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="in">    "Saturday"= "black",  #changes color of points</span></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="in">    "Sunday" = "turquoise"  #changes color of points</span></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="in">  ))+</span></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="in">  labs(</span></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="in">    title = " Average Time Spent on School Work by Day of Week", #adds a title</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="in">    x = "Day of the Week", #changes x-axis title</span></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="in">    color = "Day of Week", #changes legend title</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="in">    y = "Time spent on School Work(min)", #changes y-axis title</span></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="in">    caption = "Figure 1") +#adds a caption </span></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="in">  theme_bw() #changing theme of plot</span></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="fu">### Plot</span></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="al">![](/media/datavis1.jpg)</span></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>Figure 1: Average time spent on school work(min) measured each day of the week Sunday-Friday. The response variable is time spent on school(min) and the predictor variable is the day of week. Small circles represent the individual observations for time spent on school work each day. The red point represents the mean time spent on school work for each week day.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="in">mean_data &lt;- mydata |&gt; #uses my_data frame</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="in">group_by(day.of.week) |&gt; #groups points by day of week</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="in">  summarize(mean_time = mean(Time.spent.on.Schoolwork.min.)) #calculates mean time spent on school work for each day of the week</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="in">  </span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="in">ggplot(mydata, #uses mydata frame</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="in">       aes(x = day.of.week, #x-axis should be day of week</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="in">           y = Time.spent.on.Schoolwork.min., #y-axis should be time spent on school work in min</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="in">                   color = day.of.week)) + #coloring geometries by day of week</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="in">  </span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_jitter( width =0.1, #adds points</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="in">               height= 0,</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="in">               alpha=0.5)+ # points 50% transparent</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_point(data=mean_data, aes(y=mean_time), shape = 16, size = 3, color = "red")+#adds a mean point for each day</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="in">  scale_color_manual(values = c(</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="in">    "Monday" = "magenta", #changes color of points</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="in">    "Tuesday" = "orange", #changes color of points </span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="in">    "Wednesday" = "gold", #changes color of points</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="in">    "Thursday" = "green", #changes color of points</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="in">    "Friday" = "darkblue",#changes color of points</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="in">    "Saturday"= "black",  #changes color of points</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="in">    "Sunday" = "turquoise"  #changes color of points</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="in">  ))+</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="in">  labs(</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="in">    title = " Average Time Spent on School Work by Day of Week", #adds a title</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="in">    x = "Day of the Week", #changes x-axis title</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="in">    color = "Day of Week", #changes legend title</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="in">    y = "Time spent on School Work(min)", #changes y-axis title</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="in">    caption = "Figure 1") +#adds a caption </span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="in">  theme_bw() #changing theme of plot</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="fu">### Plot</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="al">![](/media/datavis1.jpg)</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>Figure 1: Average time spent on school work(min) measured each day of the week Sunday-Friday. The response variable is time spent on school(min) and the predictor variable is the day of week. Small circles represent the individual observations for time spent on school work each day. The red point represents the mean time spent on schoolwork for each week day.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"selector":".lightbox","openEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false,"openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
