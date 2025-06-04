@@ -4,7 +4,7 @@ description: "10 Week project based on Critical Thinking"
 author:
   - name: Sara Guefroudj
     
-categories: [Research Project] # self-defined categories
+categories: [Research Project] 
 image: /media/CT.jpg
 image_source_html: >
   <a href="http://www.freepik.com">Designed by macrovector_official / Freepik</a>
@@ -22,4 +22,4 @@ I took Environmental Science 40, a critical thinking course taken at UCSB. For a
 </iframe>
 
 ### Process
-The process for this project started with making a proposal on what my project was going to look like and how I plan on presenting it. I decided to focus on lithium mining in Chile. This took me a week to complete. The second part of this process was to start doing research. I spent 2 weeks gathering and synthesizing information on the topic in order to move forward with the essay. Th last step of this process was to start writing the essay and to make sure to utilize the critical thinking skills I learned through out the quarter. One important part of this process was time management. Through out the course we completed weekly time logs to list fully what was completed that week and to keep track of our progress
+The process for this project started with making a proposal on what my project was going to look like and how I plan on presenting it. I decided to focus on lithium mining in Chile. This took me a week to complete. The second part of this process was to start doing research. I spent 2 weeks gathering and synthesizing information on the topic in order to move forward with the essay. The last step of this process was to start writing the essay and to make sure to utilize the critical thinking skills I learned through out the quarter. One important part of this process was time management. Through out the course we completed weekly time logs to list fully what was completed that week and to keep track of our progress
