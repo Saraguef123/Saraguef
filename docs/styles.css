@@ -1,6 +1,8 @@
 /* css styles */
 html, body {
   font-family: "Verdana", serif;
+  font-size: 0.90em;
+   
 }
 .title {
   font-family: "Comic Sans MS", sans-serif;
