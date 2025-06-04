@@ -22,6 +22,7 @@ input[type="search"] {
   border: 1px solid #94b392; 
 }
 .navbar a {
+    font-family: "Verdana", serif;
     color: black; 
 }
 .navbas a {
@@ -31,4 +32,8 @@ h2 {
   position: relative;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
+}
+.toc, .toc a, nav, nav a {
+  font-family: "Inter", sans-serif; /* or any font you want */
+ 
 }
