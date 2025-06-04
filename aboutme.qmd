@@ -23,18 +23,12 @@ gallery:
 ---
 ![Santa Barbara](media/SantaBarbara.jpg){fig-align="center"style="width:365px; height:300px;"}
 
-## Background
-
-<hr style="height: 3px; background-color: black; border: none;">
-
+# Background
 I grew up in Santa Barbara, California. I enjoy spending time by the beach and love the weather here. I am currently pursuing a bachelors degree in Hydrologic Sciences and Policy and plan to pursue a career focused on sustainability and environmental protection.
 
 
 
-## Photography
-
-<hr style="height: 3px; background-color: black; border: none;">
-
+# Photography
 I enjoy photography in my free time. I enjoy taking pictures of places I have been or anything that I can capture in the moment. Here are some photos I have taken over the years.
 <div style="display: flex; gap: 10px;justify-content: center;">
   <img src="media/other.png" alt="H" style="height: 250px; width: 250px; object-fit: cover;">
@@ -43,10 +37,7 @@ I enjoy photography in my free time. I enjoy taking pictures of places I have be
 </div>
 
 
-## Baking
-
-<hr style="height: 3px; background-color: black; border: none;">
-
+# Baking
 I have recently been enjoying baking different kinds of desserts and pastries from all around the world. I enjoy learning the different recipes and cultures behind them. One of my favorites was baking baklava at home which took a lot of time but was very worth it in the end.
 <div style="display: flex; gap: 10px;justify-content: center;">
   <img src="media/Baklava.jpg" alt="Homemade baklava 1" style="height: 300px; width: auto; object-fit: cover;">

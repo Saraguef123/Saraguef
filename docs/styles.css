@@ -7,22 +7,22 @@ html, body {
 .title {
   font-family: "Comic Sans MS", sans-serif;
 }
-h2 {
+ h1, h2{
   font-family: "Comic Sans MS", sans-serif;
 }
 body {
-  background-color: #faf7f0;  /* light blue, change to any color you want */
+  background-color: #faf7f0
 }
 .navbar {
   background-color: #dff7df;
 }
 input[type="search"] {
-  background-color: #e0f7e9; /* light green background, change as you want */
-  color: black;              /* text color */
-  border: 1px solid #a3c1a1; /* optional: border color */
+  background-color: #e0f7e9; 
+  color: black;              
+  border: 1px solid #94b392; 
 }
 .navbar a {
-    color: black; /* Replace #YOURCOLOR with your desired color code */
+    color: black; 
 }
 .navbas a {
   font-family: "Verdana", sans-serif;
